@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Capsule</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="icon" type="image/ico" href="../images/icon.jpg">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/stylecapsule.css">
+
+</head>
+<body>
+	<div class="container-fluid">
+	 		<div class="row rowtop">
+	    		<div class="col col-1 icon">
+	    			<a href="index.html"><img class="icon1" src="../images/icon3.png" alt="Capsule Icon" width="70px" height="70px"></a>
+	    			<a href="index.html"><img class="icon2" src="../images/icon4.png" alt="Capsule Icon" width="70px" height="70px"></a>
+	    		</div>
+	    		<div class="col col-1"><a class="link top" href="../templates/download.html">Download</a></div>
+	    		<div class="col col-1"><a class="link top" href="https://medium.com/@teamtimecapsule" target="_blank">News</a></div>
+	    		<div class="col col-1"><a class="link top" href="capsule.html">Capsule</a></div>
+	    		<div class="col col-4"></div>
+	    		<div class="col col-2"></div>
+	    		<div class="col col-2"><a class="link top" href="../templates/login.html">Login</a></div>
+	  		</div>
+
+	  		<div class="row middle">
+		    		<div class="col slideshow-container">
+					  <div class="mySlides fade">
+					    <div class="numbertext">1 / 5</div>
+					    <img src="../images/capsule1.png" width="375px" height="550px" alt="Capsule app loading page">
+					    <div class="text">What is Capsule?</div>
+					  </div>
+					  <div class="mySlides fade">
+					    <div class="numbertext">2 / 5</div>
+					    <img src="../images/capsule2.png" width="375px" height="550px" alt="Camera view from capsule app">
+					    <div class="text">Capsule is a Camera</div>
+					  </div>
+					  <div class="mySlides fade">
+					    <div class="numbertext">3 / 5</div>
+					    <img src="../images/capsule4.png" width="375px" height="550px" alt="Capsule app profile page">
+					    <div class="text">Store Pictures in Albums Shared With Your Friends</div>
+	    			  </div>
+	    			  <div class="mySlides fade">
+					    <div class="numbertext">4 / 5</div>
+					    <img src="../images/capsule5.png" width="375px" height="550px" alt="Example of picture taken with capsule">
+					    <div class="text">Comprehend Visual Context</div>
+	    			  </div>
+	    			  <div class="mySlides fade">
+					    <div class="numbertext">5 / 5</div>
+					    <img src="../images/capsule3.png" width="375px" height="550px" alt="Capsule app profilepage">
+					    <div class="text">LOOK AT ALL THESE EMOJIS</div>
+	    			  </div>
+	    	</div>
+	    		
+	  		<div class="row bottom">
+	  			<div class="col col-3"></div>
+	      		<div class="col col-2"><a class="link bot" href="../templates/privacy.html">Privacy Policy</a></div>
+	      		<div class="col col-2"><a class="link bot" href="../templates/terms.html">Terms of Service</a></div>
+	    		<div class="col col-2"><a class="link bot" href="../templates/about us.html">Contact Us</a></div>
+	    		<div class="col col-2"></div>
+	    		<div class="col col-1"><div class="copyright">&#169; 2017 Capsule</div></div>
+	    	</div>
+	</div>
+	<script type="text/javascript">
+		var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+	</script>
+</body>
+</html>					

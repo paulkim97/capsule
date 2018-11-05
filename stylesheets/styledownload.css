@@ -1,0 +1,209 @@
+html, body{
+	width: 100%;
+	font-family:"Helvetica";
+	height: 100%;
+}
+.container-fluid{
+	background:url(../images/down.jpg);
+	background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+	display: table;
+}
+
+.top{	
+	background: transparent;
+	color: #ebf5ff;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: text-shadow 500ms, color 500ms;
+}
+.top:hover{
+	text-decoration: none;
+	color:#42C0FB;
+	text-shadow: 3px 3px 8px #171717; 
+}
+.row{
+	display:table-row;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	margin:0;
+}
+.col{
+
+	padding: 0px;
+}
+.rowtop{
+	background-color: rgba(0,0,0, 0.5); 
+	height: 80px;
+	display: flex;
+	align-items: center;
+	margin:0px;
+	box-shadow: 0 1px 150px #151515;
+
+}
+.middle{
+	height: 100%;
+}
+.frame{
+	background-color: rgba(0,0,0, 0.3); 
+	transition: background-color 1s;
+	height: 100%;
+	width: 650px;
+	display: flex;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin:auto;
+	overflow: hidden;
+ 	-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+.icon{
+	margin:0px;
+}
+.icon1{
+	position: relative;
+	transition: opacity;
+	z-index: 1;
+	left: 0;
+	transition: opacity 500ms linear;
+}
+.icon2{
+	position: absolute;
+	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+	display: inline-block;
+	z-index: 0;
+	transition: opacity 500ms linear;
+}
+.icon1:hover{
+	opacity:0;
+}
+.icon1:hover > .icon2{
+	opacity: 1;
+}
+.bottom{
+	font-family:"Courier New";
+	color:#ebf5ff;
+	font-weight: bold;
+	background-color: rgba(0,0,0, 0.8); 
+	display: flex;
+	height: 50px;
+	position: relative;
+	bottom: 0px;
+	align-items: center;
+	box-shadow: 0 -1px 150px #151515;
+	margin:0;
+}
+.bot{
+	color: #ebf5ff;
+}
+.bot:hover{
+	text-decoration: none;
+	color: #ebf5ff;
+	border-bottom: 1px solid;
+}
+.copyright, .heap{
+	color:#D3D3D3;
+	font-size: 10px;
+}
+.heap:hover{
+	color:#D3D3D3;
+}
+
+.slider{
+	background-color: #151515;
+	padding: 0px;
+	position: absolute;
+    width: 310px;
+	height: 552px;
+	left: 50%;
+  	transform: translateX(-50%);
+  	margin: 0px;
+ 	box-shadow: 0 0 40px 50px #151515;
+}
+li{
+    position: absolute;
+    list-style:none;
+}
+.slider input {
+    display: none;
+}
+.frame label{
+	background-color: #ebf5ff;
+    border: 1px solid #151515;
+    bottom: 0px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    opacity: 0;
+    position: absolute;
+    transition: 500ms linear;
+    width: 10px;
+    visibility: hidden;
+    z-index: 10;
+}
+.frame:hover label {
+	opacity: 1;
+    visibility: visible;
+}
+.frame:hover{
+	background-color: #151515;
+}
+.frame input:checked + label {
+    background: linear-gradient(to right, #007AFF, #00B4FF)
+}
+li:nth-child(1) label {
+    left: 20%;
+}
+li:nth-child(2) label {
+    left: 40%;
+}
+li:nth-child(3) label {
+    left: 60%;
+}
+li:nth-child(4) label {
+    left: 80%;
+}
+
+/* Images */
+
+.slider .slideshow {
+    height:552px;
+    width:310px;
+    opacity: 0;
+    transition: opacity 1s;
+    vertical-align: top;
+    visibility: hidden;
+}
+.slider li input:checked ~ .slideshow{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+.head{
+	font-size: 30px;
+	color:#151515;
+	font-weight: 700px;
+	text-shadow: 1px 1px 0px #171717;  
+  	position: absolute;
+  	text-align: center;
+  	left: 0;
+  	width: 25%;
+  	letter-spacing: 10px;
+  	padding-left: 6%;
+  	padding-top:8%;
+}
+.appstore{
+	position: absolute;
+	left: 15%;
+	top: 45%;
+
+}

@@ -1,0 +1,121 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	font-family:"Helvetica";
+}
+.container-fluid{
+	background-color: #ebf5ff
+    background-position: 30% 87%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    width: 100%;
+    padding: 0px;
+	display: table;
+}
+.top{	
+	background: transparent;
+	color: #ebf5ff;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: text-shadow 500ms, color 500ms;
+}
+.top:hover{
+	text-decoration: none;
+	color:#42C0FB;
+	text-shadow: 3px 3px 8px #151515;  
+}
+ 
+.row{
+	display: table-row;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	margin:0;
+}
+.rowtop{
+	height: 80px;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(to right, #007AFF, #00B4FF);
+	box-shadow: 0 1px 150px #ebf5ff;
+}
+.middle{
+	height:100%;
+}
+.head{
+	color:#151515;;
+  	position: relative;
+}
+
+.icon{
+	margin:0px;
+}
+.icon1{
+	position: relative;
+	transition: opacity;
+	z-index: 1;
+	left: 0;
+	transition: opacity 1s linear;
+}
+.icon2{
+	position: absolute;
+	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+	display: inline-block;
+	z-index: 0;
+	transition: opacity 1s linear;
+}
+.icon1:hover{
+	opacity:0;
+}
+.icon1:hover > .icon2{
+	opacity: 1;
+}
+.bottom{
+	font-family:"Courier New";
+	color:#ebf5ff;
+	font-weight: bold;
+	background-color: rgba(0,0,0, 0.5); 
+	display: flex;
+	height: 50px;
+	position: fixed;
+	bottom: 0px;
+	align-items: center;
+	box-shadow: 0 -1px 150px #ebf5ff;
+}
+.bot{
+	color: #ebf5ff;
+}
+.bot:hover{
+	text-decoration: none;
+	color: #ebf5ff;
+	border-bottom: 1px solid;
+}
+.copyright, .heap{
+	color:#D3D3D3;
+	font-size: 10px;
+}
+.heap:hover{
+	color:#D3D3D3;
+}
+.privacy{
+	width: 50%;
+	text-align: left;
+	padding-top: 50px;
+	padding-left: 80px;
+	padding-bottom: 50px;x
+}
+
+h1{
+	color:#151515;
+	font-weight: 900px;
+	font-size: 40px;
+	text-decoration: underline;
+}
+h2{
+	font-weight: 550px;
+	font-size: 30px;
+}
